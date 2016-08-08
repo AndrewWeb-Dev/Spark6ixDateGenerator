@@ -1,0 +1,16 @@
+@media all and (max-width: 600px) {
+
+	.wrapper {
+		border-radius: none;
+	}
+
+	.labels {
+		flex-direction: column;
+		align-items: center;
+	
+		label {
+			width: 90%;
+		}
+	}
+
+}
