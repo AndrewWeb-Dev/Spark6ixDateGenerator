@@ -342,6 +342,7 @@ $(function() {
 	// when they hit hotDate button
 	$("form").on("submit", function(event){
 		event.preventDefault();
+		$('html, body').animate({ scrollTop: 0 }, 0);
 		// console.log("you stopped the button thing");
 	
 	// figure out what they picked
@@ -373,10 +374,12 @@ $(function() {
 		var finalDate = getRandomItem(filteredOptions);
 
 		console.log(finalDate);
-		$(".results").html(`<h2>${finalDate.title}</h2>\n
-			<img src= ${finalDate.image}>\n
-			<p>${finalDate.info}</p>\n
+		$(".results").addClass('animated fadeInDown').html(`<h2>${finalDate.title}</h2>
+			<img src= ${finalDate.image}>
+			<p>${finalDate.info}</p>
 			<a href="${finalDate.link}" target=_"blank">${finalDate.linkName}</a>`);
+
+
 	//create a list of pick up lines
 		
 		var pickUpLine = [
@@ -439,6 +442,8 @@ $(function() {
 		} else {
 			$(".dateResult").addClass("hide");
 		}
+		$(".results").removeClass('animated fadeInDown')
+		$('html, body').animate({ scrollTop: 0 }, 0);
 		// $("footer").css("position", "absolute");	
 		console.log("Fiona made this button");
 	});
