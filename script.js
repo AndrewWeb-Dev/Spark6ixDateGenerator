@@ -155,11 +155,10 @@ $(function() {
 				title: "Homemade Meal on a Budget at the St. Lawrence Market ",
 				price: "cheap",
 				time: "night",
-				info: "images/Hot/hot_cooking.jpg",
-				image: "Make a meal together with a $20 budget. Head over to the St. Lawrence market, or your local farmer’s market, and decide on a meal for the evening that won’t go over $20.",
+				info: "Make a meal together with a $20 budget. Head over to the St. Lawrence market, or your local farmer’s market, and decide on a meal for the evening that won’t go over $20.",
+				image: "images/Hot/hot_cooking.jpg",
 				linkName: "St. Lawrence Market Website",
 				link: "http://www.stlawrencemarket.com"
-
 			},
 			{
 				title: "Views of the 6ix at the Park Hyatt",
